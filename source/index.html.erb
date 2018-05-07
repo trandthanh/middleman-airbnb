@@ -2,7 +2,17 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
+<!-- Banner -->
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url('http://kitt.lewagon.com/placeholder/cities/paris');">
+  <div class="banner-content">
+    <h1>Welcome home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+    <a class="btn btn-primary btn-lg">Search</a>
+  </div>
+</div>
+
+<!-- <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <p>
@@ -12,4 +22,39 @@ title: Le Wagon - Middleman
       <%= link_to "More about this template", "about.html" %>
     </p>
   </div>
+</div> -->
+
+
+<!-- Cards -->
+
+
+<div class="container">
+  <h2 class="text-center">Recent flats</h2>
+  <div class="row">
+    <% data.cities.each do |city| %>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" style="background-image: url(<%= city.picture %>);">
+          <div class="card-category"><%= city.category %></div>
+          <div class="card-description">
+            <h3 ><%= city.owner %>'s home</h2>
+            <p><%= city.description %></p>
+            <p class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </p>
+          </div>
+          <div class="card-user">
+            <img class="card-user" src="<%= city.avatar %>" alt="<% city.username %>">
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+
+
+

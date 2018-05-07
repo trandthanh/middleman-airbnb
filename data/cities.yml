@@ -1,0 +1,17 @@
+- category: 'Paris, France'
+  owner: 'Sebastien'
+  avatar: https://kitt.lewagon.com/placeholder/users/ssaunier
+  description: 'Charming room in Montmartre'
+  picture: https://kitt.lewagon.com/placeholder/cities/paris
+- category: 'Tokyo, Japan'
+  owner: 'Boris'
+  avatar: https://kitt.lewagon.com/placeholder/users/papillard
+  description: 'Small flat in Tokyo'
+  picture: https://kitt.lewagon.com/placeholder/cities/tokyo
+- category: 'London, UK'
+  owner: 'Romain'
+  avatar: https://kitt.lewagon.com/placeholder/users/monsieurpaillard
+  description: 'Nice flat in Picadilly'
+  picture: https://kitt.lewagon.com/placeholder/cities/london
+
+
